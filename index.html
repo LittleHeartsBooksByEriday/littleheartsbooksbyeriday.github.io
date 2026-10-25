@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Little Hearts Books — Bible-inspired stories and activities about faith, love, and courage for little learners.">
+  <title>Little Hearts Books | Faith • Love • Little Learners</title>
+  <style>
+    :root{
+      --ink:#3f352f;
+      --blue:#4d8fc9;
+      --pink:#e9899e;
+      --cream:#fffaf0;
+      --green:#7eae72;
+      --sky:#eaf7ff;
+      --white:#ffffff;
+      --shadow:0 10px 30px rgba(76,64,52,.12);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--cream);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.6;
+    }
+    .nav{
+      position:sticky; top:0; z-index:10;
+      background:rgba(255,250,240,.94);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid #eadfce;
+    }
+    .nav-inner{
+      max-width:1100px; margin:auto; padding:14px 22px;
+      display:flex; justify-content:space-between; align-items:center; gap:20px;
+    }
+    .brand{font-weight:800; color:#315e89; letter-spacing:.2px}
+    .nav a{color:var(--ink); text-decoration:none; margin-left:18px; font-weight:600}
+    .hero{
+      background:linear-gradient(180deg,var(--sky),var(--cream));
+      padding:72px 22px 60px;
+    }
+    .hero-grid{
+      max-width:1100px; margin:auto;
+      display:grid; grid-template-columns:1.05fr .95fr; gap:45px; align-items:center;
+    }
+    h1{
+      font-size:clamp(42px,6vw,72px); line-height:1.03; margin:0 0 18px;
+      color:#315e89;
+    }
+    h1 span{color:var(--pink)}
+    .tagline{font-size:22px; font-weight:700; margin-bottom:14px}
+    .lead{font-size:18px; max-width:620px}
+    .buttons{display:flex; flex-wrap:wrap; gap:12px; margin-top:26px}
+    .btn{
+      display:inline-block; padding:13px 20px; border-radius:999px;
+      text-decoration:none; font-weight:800; border:2px solid transparent;
+    }
+    .btn-primary{background:var(--pink); color:white}
+    .btn-secondary{background:white; color:#315e89; border-color:#b9d6ee}
+    .hero-img{width:100%; border-radius:28px; box-shadow:var(--shadow); display:block}
+    section{padding:70px 22px}
+    .wrap{max-width:1100px; margin:auto}
+    .section-title{text-align:center; font-size:38px; margin:0 0 10px; color:#315e89}
+    .section-sub{text-align:center; max-width:700px; margin:0 auto 35px}
+    .cards{display:grid; grid-template-columns:repeat(2,1fr); gap:25px}
+    .card{
+      background:white; border-radius:24px; padding:24px; box-shadow:var(--shadow);
+    }
+    .card img{width:100%; border-radius:18px; display:block}
+    .card h3{font-size:26px; color:#315e89; margin:20px 0 8px}
+    .pill{
+      display:inline-block; background:#eef8e9; color:#547d4e;
+      padding:6px 12px; border-radius:999px; font-weight:800; font-size:14px;
+    }
+    .features{
+      display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:30px
+    }
+    .feature{
+      background:#fff; padding:22px; border-radius:20px; text-align:center;
+      box-shadow:var(--shadow)
+    }
+    .feature .icon{font-size:32px}
+    .about{
+      background:#eef8ff;
+    }
+    .about-box{
+      max-width:850px; margin:auto; background:white; padding:35px;
+      border-radius:28px; box-shadow:var(--shadow); text-align:center;
+    }
+    .cta{
+      background:linear-gradient(135deg,#fce9ee,#eaf7ff);
+      text-align:center;
+    }
+    footer{
+      background:#315e89; color:white; text-align:center; padding:30px 22px;
+    }
+    footer a{color:white}
+    @media(max-width:800px){
+      .hero-grid,.cards{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .nav-inner{flex-direction:column; align-items:flex-start}
+      .nav a{margin:0 12px 0 0}
+    }
+    @media(max-width:500px){
+      .features{grid-template-columns:1fr}
+      section{padding:52px 16px}
+      .hero{padding:50px 16px}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">🐑 Little Hearts Books</div>
+    <div>
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="#shop">Shop</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="tagline">Faith • Love • Little Learners</div>
+      <h1>Stories that fill <span>little hearts</span> with hope.</h1>
+      <p class="lead">
+        Welcome to Little Hearts Books — a gentle collection of Bible-inspired
+        stories and playful activities created to encourage faith, love,
+        courage, creativity, and joyful learning.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#books">Explore the Books</a>
+        <a class="btn btn-secondary" href="#shop">Shop on Gumroad</a>
+      </div>
+    </div>
+    <img class="hero-img" src="assets/story-and-activity-preview.png" alt="Tali storybook and activity book preview">
+  </div>
+</header>
+
+<section id="books">
+  <div class="wrap">
+    <h2 class="section-title">Meet Tali 🐑</h2>
+    <p class="section-sub">
+      Two gentle resources designed to work beautifully together: a heartwarming
+      story and a playful activity book for little learners.
+    </p>
+
+    <div class="cards">
+      <article class="card">
+        <img src="assets/story-and-activity-preview.png" alt="Tali storybook and activity book">
+        <span class="pill">Storybook • Ages 3–5</span>
+        <h3>Tali, The Little Lost Lamb</h3>
+        <p>
+          A heartwarming story about a little lamb who gets lost and finds her
+          way home — a gentle journey filled with love, hope, and courage.
+        </p>
+        <a class="btn btn-primary" href="YOUR_STORYBOOK_GUMROAD_LINK" target="_blank" rel="noopener">Read & Shop</a>
+      </article>
+
+      <article class="card">
+        <img src="assets/activity-book-preview.png" alt="Inside the Tali Activity Book">
+        <span class="pill">Activity Book • Ages 3–5</span>
+        <h3>Tali Activity Book</h3>
+        <p>
+          Color, trace, count, match, solve mazes, explore patterns, and learn
+          through play with Tali.
+        </p>
+        <a class="btn btn-primary" href="YOUR_ACTIVITY_BOOK_GUMROAD_LINK" target="_blank" rel="noopener">Explore Activities</a>
+      </article>
+    </div>
+
+    <div class="features">
+      <div class="feature"><div class="icon">🎨</div><strong>Creative</strong><br>Coloring & playful art</div>
+      <div class="feature"><div class="icon">✏️</div><strong>Learning</strong><br>Tracing & early skills</div>
+      <div class="feature"><div class="icon">🔢</div><strong>Growing</strong><br>Counting & thinking</div>
+      <div class="feature"><div class="icon">❤️</div><strong>Meaningful</strong><br>Faith, love & courage</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="about-box">
+      <h2 class="section-title">About Little Hearts Books</h2>
+      <p>
+        Little Hearts Books creates sweet, age-appropriate stories and
+        activities that help children learn while reminding them that they are
+        loved, precious, and never alone.
+      </p>
+      <p>
+        Every book is made with a gentle, child-friendly style and a heart for
+        meaningful family story time and learning through play.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="shop">
+  <div class="wrap">
+    <h2 class="section-title">Bring Tali Home 🐑</h2>
+    <p class="section-sub">
+      Explore the storybook and activity book, then choose the resource that's
+      right for your little learner.
+    </p>
+    <div class="buttons" style="justify-content:center">
+      <a class="btn btn-primary" href="YOUR_STORYBOOK_GUMROAD_LINK" target="_blank" rel="noopener">Storybook</a>
+      <a class="btn btn-secondary" href="YOUR_ACTIVITY_BOOK_GUMROAD_LINK" target="_blank" rel="noopener">Activity Book</a>
+      <a class="btn btn-secondary" href="YOUR_BUNDLE_GUMROAD_LINK" target="_blank" rel="noopener">Bundle</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>Little Hearts Books</strong><br>
+  Bible-Inspired Stories & Activities About Faith, Love, and Courage<br><br>
+  <a href="YOUR_PINTEREST_PROFILE_LINK" target="_blank" rel="noopener">Pinterest</a>
+  &nbsp;•&nbsp;
+  <a href="YOUR_GUMROAD_PROFILE_LINK" target="_blank" rel="noopener">Gumroad</a>
+  <p style="margin-bottom:0;font-size:14px;opacity:.9">© 2026 Little Hearts Books</p>
+</footer>
+
+</body>
+</html>
